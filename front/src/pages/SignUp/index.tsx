@@ -7,10 +7,10 @@ import useSignUp from './useSignUp'
 const SignUp = () => {
 
     const [inputs, SetInputs] = useState({
-        userName: '',
-        password: '',
-        confirmPassword: '',
-        gender: ''
+        userName: 'fangyiyuan',
+        password: '1',
+        confirmPassword: '1',
+        gender: 'male'
     })
 
     const handleCheckboxChange = (gender: any) => {
@@ -25,6 +25,7 @@ const SignUp = () => {
 
     const handleSubmit = (e: SyntheticEvent) => {
         e.preventDefault()
+        signUp(inputs)
     }
 
     return (
